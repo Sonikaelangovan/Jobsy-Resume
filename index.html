@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Screener AI | Instant Resume Scanner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fas fa-file-alt"></i>
+      ResumeScreener.ai
+    </div>
+    <ul class="nav-links">
+      <li><a href="#how-it-works">How it Works</a></li>
+      <li><a href="#upload">Upload</a></li>
+      <li><a href="#results">Results</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <center>
+      <h1>Boost Your Hiring Accuracy</h1>
+      <p>Instantly analyze and rank resumes using AI. Find the best candidates in seconds.</p>
+      <a href="#upload" class="btn-primary pulse">
+        <i class="fas fa-rocket"></i> Try It Now
+      </a>
+      </center>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="info-section">
+    <h2>How It Works</h2>
+    <div class="info-cards">
+      <div class="card">
+        <i class="fas fa-upload"></i>
+        <span>Upload Resumes</span>
+      </div>
+      <div class="card">
+        <i class="fas fa-file-alt"></i>
+        <span>Paste Job Description</span>
+      </div>
+      <div class="card">
+        <i class="fas fa-brain"></i>
+        <span>AI Analyzes Content</span>
+      </div>
+      <div class="card">
+        <i class="fas fa-chart-line"></i>
+        <span>Get Ranked Candidates</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="upload" class="upload-section">
+    <div class="container fade-in">
+      <h2>Upload Resumes & Job Description</h2>
+      <form id="uploadForm">
+        <div class="form-group">
+          <label for="job_description">Job Description</label>
+          <textarea id="job_description" name="job_description" rows="6" required placeholder="Paste job description here..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="resumes">Upload Resumes (.pdf/.docx)</label>
+          <div class="file-upload" id="fileUpload">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Drag and drop files here or click to browse</p>
+            <p class="small">Supported formats: PDF, DOCX</p>
+            <input type="file" id="resumes" name="resumes" multiple accept=".pdf,.docx" required style="display: none;">
+          </div>
+          <div class="file-list" id="fileList"></div>
+        </div>
+        <button type="submit" class="btn-primary">
+          <i class="fas fa-search"></i> Analyze
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <section id="results" class="results-section container">
+    <!-- Sample results - JS will replace these -->
+    <h2>Top Matches</h2>
+    <div class="result-card">
+      <div class="result-header">
+        <div class="result-title">
+          <i class="fas fa-user-tie"></i>
+          <h3>John Smith.pdf</h3>
+        </div>
+        <div class="match-score">
+          <i class="fas fa-star"></i>
+          92%
+        </div>
+      </div>
+      <div class="result-content">
+        <h4>Relevant Experience</h4>
+        <p>Software Engineer with 5+ years of experience in full-stack development. Proficient in JavaScript, React, Node.js, and cloud technologies. Led a team of 5 developers to deliver a customer-facing application that increased user engagement by 30%.</p>
+        <div class="result-metrics">
+          <div class="metric">
+            <i class="fas fa-briefcase"></i>
+            <span>5+ Years Experience</span>
+          </div>
+          <div class="metric">
+            <i class="fas fa-check-circle"></i>
+            <span>3 Skills Matched</span>
+          </div>
+          <div class="metric">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Master's Degree</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="result-card">
+      <div class="result-header">
+        <div class="result-title">
+          <i class="fas fa-user-tie"></i>
+          <h3>Sarah Johnson.pdf</h3>
+        </div>
+        <div class="match-score">
+          <i class="fas fa-star"></i>
+          87%
+        </div>
+      </div>
+      <div class="result-content">
+        <h4>Relevant Experience</h4>
+        <p>UX/UI Designer with expertise in creating user-centered designs for web and mobile applications. Experience with Figma, Sketch, and Adobe Creative Suite. Collaborated with product managers and developers to deliver intuitive and accessible interfaces.</p>
+        <div class="result-metrics">
+          <div class="metric">
+            <i class="fas fa-briefcase"></i>
+            <span>3+ Years Experience</span>
+          </div>
+          <div class="metric">
+            <i class="fas fa-check-circle"></i>
+            <span>4 Skills Matched</span>
+          </div>
+          <div class="metric">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Bachelor's Degree</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fas fa-file-alt"></i>
+        ResumeScreener.ai
+      </div>
+      <div class="footer-links">
+        <a href="index.html#how-it-works">Features</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-bottom">© 2025 ResumeScreener.ai | Built with ❤️ and AI</p>
+    </div>
+  </footer>
+  </body>
+</html>
